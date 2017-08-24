@@ -1,5 +1,5 @@
 import Auth from './components/Auth'
 
 export default [
-{ path: '/auth', component: Auth }
+{ path: '/auth', name: 'auth', component: Auth }
 ]

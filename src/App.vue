@@ -9,7 +9,7 @@
 
 
 <script>
-import RootHeader from './components/root/header'
+import RootHeader from './components/root/header/main'
 export default {
   components: { RootHeader }
 }
