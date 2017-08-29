@@ -8,7 +8,7 @@ import store from './vuex'
 // Vue.use(VueRouter)
 // const router = new VueRouter({})
 
-Vue.config.productionTip = false
+Vue.use(store)
 
 new Vue({
   el: '#app',
