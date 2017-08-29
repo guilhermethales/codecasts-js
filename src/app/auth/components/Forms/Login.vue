@@ -13,6 +13,9 @@ import { isEmpty } from 'lodash'
 			doLogin () {
 				const user = this.user
 				this.$store.dispatch('attemptLogin', { ...user })
+				.then(() => {
+					this.$router.push('/')
+				})
 			}
 		},
 		computed: {

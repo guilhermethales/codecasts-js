@@ -6,7 +6,7 @@
 
 
 <script>
-import http from '@/http'
+import http from 'src/http'
 export default {
 mounted () {
 	http.get('http://pokeapi.co/api/v2/pokemon/1/')
