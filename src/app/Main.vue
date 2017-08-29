@@ -9,10 +9,11 @@
 
 
 <script>
-import RootHeader from './components/root/header/main'
+import RootHeader from 'components/root/header/main'
 export default {
+	name: 'App',
   components: { RootHeader }
 }
 </script>
 
-<style src="./assets/sass/app.scss" lang="sass"></style>
+<style src="../assets/sass/app.scss" lang="sass"></style>
