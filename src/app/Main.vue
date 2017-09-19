@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+		<PageLoader></PageLoader>
     <RootHeader></RootHeader>
     <div class="container">
         <router-view></router-view>
@@ -12,7 +13,12 @@
 import RootHeader from 'components/root/header/main'
 export default {
 	name: 'App',
-  components: { RootHeader }
+  components: { RootHeader },
+	computed: {
+		show () {
+			return this.$store.state.CODECASTS_LOADER.show
+		}
+	}
 }
 </script>
 

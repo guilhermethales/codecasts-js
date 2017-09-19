@@ -4,13 +4,17 @@ import Vue from 'vue'
 import App from './app/Main'
 import router from './router'
 import store from './vuex'
+import Loader from './plugins/loader'
 // import VueRouter from 'vue-router'
 // Vue.use(VueRouter)
 // const router = new VueRouter({})
 
-Vue.use(store)
+Vue.use(Loader, store)
 
 new Vue({
+	data: {
+		name: 'xobi'
+	},
   el: '#app',
   router,
 	store,
